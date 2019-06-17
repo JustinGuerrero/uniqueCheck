@@ -1,0 +1,12 @@
+    boolean method1(String unique)
+    { //first create your for loop to iterate through the length of the string
+      // following it by another for loop to compare while iterating.
+      //finally the if statement converts the string to char and compares each char
+      //return false if there are a match, and true if no matches and the string is unique.
+        for (int i = 0; i < unique.length(); i++)
+            for (int j = i + 1; j < unique.length(); j++)
+                if (unique.charAt(i) == unique.charAt(j))
+                    return false;
+        return true;
+          }
+
